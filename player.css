@@ -1,0 +1,71 @@
+#zplayer {
+	width: 20vw;
+	height: 11.25vw;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	border-top: 0px solid rgba(255, 0, 0, 1);
+	z-index: 200000;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0);
+	display: flex;
+	flex-direction: column;
+	border-top-right-radius: 2%;
+	border-top-left-radius: 2%;
+}
+
+.popup-header:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+#zplayer:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+	position: fixed;
+	/*resize: both; !*enable this to css resize*! */
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.popup .resizer-right {
+	width: 20px;
+	height: 100%;
+	background: transparent;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	cursor: e-resize;
+}
+
+.popup .resizer-bottom {
+	width: 100%;
+	height: 20px;
+	background: transparent;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	cursor: n-resize;
+}
+
+.popup .resizer-both {
+	width: 10px;
+	height: 20px;
+	background: transparent;
+	z-index: 10;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	cursor: nw-resize;
+}
+.popup-header {
+	padding: 10px;
+	cursor: move;
+	z-index: 10;
+	background-color: rgba(0, 0, 0, 0);
+	color: #fff;
+	display: flex;
+	clear: both;
+	float: top;
+}
